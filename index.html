@@ -1,660 +1,495 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/note/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/note/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/note/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/note/images/logo.svg" color="#222">
+    
 
-<link rel="stylesheet" href="/note/css/main.css">
+    
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/note/lib/font-awesome/css/all.min.css">
+    
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"pengwei785.github.io","root":"/note/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
 
-  <meta property="og:type" content="website">
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>PengWei</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
 <meta property="og:title" content="PengWei">
 <meta property="og:url" content="http://pengwei785.github.io/note/index.html">
 <meta property="og:site_name" content="PengWei">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Peng Wei">
 <meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="PengWei" href="/note/atom.xml">
+    
+    <link rel="shortcut icon" href="/note/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
 
-<link rel="canonical" href="http://pengwei785.github.io/note/">
+    <!-- custom head -->
+    
 
+<meta name="generator" content="Hexo 4.2.0"></head>
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
+<body>
+    <div id="loading" class="active"></div>
 
-  <title>PengWei</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/note/atom.xml" title="PengWei" type="application/atom+xml">
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/note/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">PengWei</h1>
-      <span class="logo-line-after"><i></i></span>
+    <aside id="menu"  >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
     </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
+    <div class="brand-wrap" style="background-image:url(/note/img/brand.jpg)">
+      <div class="brand">
+        <a href="/note/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/note/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Peng Wei</h5>
+          <a href="mailto:mr.pengwei@qq.com" title="mr.pengwei@qq.com" class="mail">mr.pengwei@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect active">
+              <a href="/note/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/note/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/note/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/note/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/pengwei785" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/note/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
     </div>
   </div>
-</div>
+</aside>
 
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">PengWei</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header index-header">
 
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/note/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/note/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/note/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
+    <div class="container fade-scale">
+        <h1 class="title">PengWei</h1>
+        <h5 class="subtitle">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://pengwei785.github.io/note/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/note/images/avatar.gif">
-      <meta itemprop="name" content="Peng Wei">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="PengWei">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/note/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">配置博客</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-04-21 20:40:56 / 修改时间：20:45:27" itemprop="dateCreated datePublished" datetime="2020-04-21T20:40:56+08:00">2020-04-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/note/categories/%E5%85%B6%E5%AE%83/" itemprop="url" rel="index"><span itemprop="name">其它</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>链接：<code>/themes/next/source/css/_common/scaffolding/base.styl  &gt;  a</code></p>
-<p>字体：<code>/themes/next/source/css/_variables/base.styl  &gt;  font-size</code></p>
-
-      
+                
+            
+        </h5>
     </div>
 
     
+
+
+</header>
+
+<div class="container body-wrap">
+
+    <ul class="post-list">
     
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+        <li class="post-list-item fade">
+            <article id="post-配置博客"
+  class="article-card article-type-post" itemprop="blogPost">
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://pengwei785.github.io/note/2020/04/21/PyTorch/">
+    <div class="post-meta">
+        <time class="post-time" title="2020-04-21 20:40:56" datetime="2020-04-21T12:40:56.000Z"  itemprop="datePublished">2020-04-21</time>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/note/images/avatar.gif">
-      <meta itemprop="name" content="Peng Wei">
-      <meta itemprop="description" content="">
-    </span>
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/note/categories/%E5%85%B6%E5%AE%83/">其它</a></li></ul>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="PengWei">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/note/2020/04/21/PyTorch/" class="post-title-link" itemprop="url">PyTorch</a>
-        </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-04-21 14:53:16 / 修改时间：20:37:59" itemprop="dateCreated datePublished" datetime="2020-04-21T14:53:16+08:00">2020-04-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/note/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">深度学习</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><a href="https://pytorch.org/" target="_blank" rel="noopener">PyTorch官网</a><br><a href="https://pytorch.org/tutorials/" target="_blank" rel="noopener">PyTorch官方教程</a><br><a href="https://pytorch.org/docs/stable/index.html" target="_blank" rel="noopener">PyTorch官方文档</a><br><a href="https://pytorch.apachecn.org/docs/1.4/" target="_blank" rel="noopener">PyTorch中文文档/教程</a><br><a href="https://tangshusen.me/Dive-into-DL-PyTorch/#/" target="_blank" rel="noopener">动手学深度学习PyTorch版</a></p>
-<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>做了一个小测试，发现在cpu上pytorch比tensorflow快很多。另外还发现，conda命令安装的tensorflow比pip安装的要快，pytorch则没有明显区别，之前就看到有人说conda中的tensorflow经过了优化，看来是真的。</p>
-<p>寻找下面函数的最小值：</p>
-<p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419152635168-692192025.png" alt=""></p>
-<p>conda：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">himmelblau</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> (x[<span class="number">0</span>]**<span class="number">2</span> + x[<span class="number">1</span>] - <span class="number">11</span>)**<span class="number">2</span> + (x[<span class="number">0</span>] + x[<span class="number">1</span>]**<span class="number">2</span> - <span class="number">7</span>)**<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> plotly.graph_objects <span class="keyword">as</span> go</span><br><span class="line">x = np.arange(<span class="number">-6</span>, <span class="number">6</span>, <span class="number">0.1</span>)</span><br><span class="line">y = np.arange(<span class="number">-6</span>, <span class="number">6</span>, <span class="number">0.1</span>)</span><br><span class="line"><span class="comment"># print('x,y range:', x.shape, y.shape)</span></span><br><span class="line">X, Y = np.meshgrid(x, y)</span><br><span class="line">fig = go.Figure(data=go.Surface(z=himmelblau([X,Y])))</span><br><span class="line">fig.write_image(<span class="string">'figure2.svg'</span>)</span><br><span class="line">fig.write_html(<span class="string">'first_figure.html'</span>, auto_open=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tic = time.time()</span><br><span class="line">x = torch.tensor([<span class="number">0.</span>, <span class="number">0.</span>], requires_grad=<span class="literal">True</span>)</span><br><span class="line">optimizer = torch.optim.Adam([x], lr=<span class="number">1e-3</span>)</span><br><span class="line"><span class="keyword">for</span> step <span class="keyword">in</span> range(<span class="number">20000</span>):</span><br><span class="line">    pred = himmelblau(x)</span><br><span class="line">    optimizer.zero_grad() <span class="comment"># 梯度信息清零</span></span><br><span class="line">    pred.backward()</span><br><span class="line">    optimizer.step() <span class="comment"># 每调用一次step，就更新一次: x' = x, y' = y</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> step % <span class="number">2000</span> == <span class="number">0</span>:</span><br><span class="line">        print(<span class="string">'step&#123;&#125;: x = &#123;&#125;, f(x) = &#123;&#125;'</span>.format(step, x.detach().numpy(), pred.item()))</span><br><span class="line">toc = time.time()</span><br><span class="line">print(<span class="string">'time:'</span>,toc-tic)</span><br><span class="line"></span><br><span class="line">tic = time.time()</span><br><span class="line">x = tf.Variable([<span class="number">0.</span>, <span class="number">0.</span>])  <span class="comment"># 传入GradientTape计算梯度的必须是tf.Variable类型</span></span><br><span class="line">optimizer = tf.optimizers.Adam(lr=<span class="number">1e-3</span>)</span><br><span class="line"><span class="keyword">for</span> step <span class="keyword">in</span> range(<span class="number">20000</span>):</span><br><span class="line">    <span class="keyword">with</span> tf.GradientTape() <span class="keyword">as</span> tape:</span><br><span class="line">        tape.watch([x])</span><br><span class="line">        pred = himmelblau(x)</span><br><span class="line">        </span><br><span class="line">    grads = tape.gradient(pred, [x])</span><br><span class="line">    optimizer.apply_gradients(zip(grads, [x])) <span class="comment"># 和pytorch不同，tf是将所有梯度信息存起来一次性更新</span></span><br><span class="line">    <span class="comment"># x -= 0.001*grads</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> step % <span class="number">2000</span> == <span class="number">0</span>:</span><br><span class="line">        print(<span class="string">'step&#123;&#125;: x = &#123;&#125;, f(x) = &#123;&#125;'</span>.format(step, x.numpy(), pred.numpy()))</span><br><span class="line">toc = time.time()</span><br><span class="line">print(<span class="string">'time:'</span>,toc-tic)</span><br></pre></td></tr></table></figure>
-<p>conda版：</p>
-<blockquote>
-<p>step0: x = [0.001 0.001], f(x) = 170.0<br>step2000: x = [2.3331807 1.9540695], f(x) = 13.730916023254395<br>step4000: x = [2.982008  2.0270984], f(x) = 0.014858869835734367<br>step6000: x = [2.9999835 2.0000222], f(x) = 1.1074007488787174e-08<br>step8000: x = [2.9999938 2.0000083], f(x) = 1.5572823031106964e-09<br>step10000: x = [2.9999979 2.0000029], f(x) = 1.8189894035458565e-10<br>step12000: x = [2.9999993 2.000001 ], f(x) = 1.6370904631912708e-11<br>step14000: x = [2.9999998 2.0000002], f(x) = 1.8189894035458565e-12<br>step16000: x = [3. 2.], f(x) = 0.0<br>step18000: x = [3. 2.], f(x) = 0.0<br><strong>time: 8.470422983169556</strong><br>step0: x = [0.001 0.001], f(x) = 170.0<br>step2000: x = [2.3331852 1.9540718], f(x) = 13.730728149414062<br>step4000: x = [2.9820085 2.0270977], f(x) = 0.01485812570899725<br>step6000: x = [2.9999835 2.0000222], f(x) = 1.1074007488787174e-08<br>step8000: x = [2.9999938 2.0000083], f(x) = 1.5572823031106964e-09<br>step10000: x = [2.9999979 2.0000029], f(x) = 1.8189894035458565e-10<br>step12000: x = [2.9999995 2.0000007], f(x) = 9.322320693172514e-12<br>step14000: x = [3.        2.0000002], f(x) = 9.094947017729282e-13<br>step16000: x = [3. 2.], f(x) = 0.0<br>step18000: x = [3. 2.], f(x) = 0.0<br><strong>time: 43.112674951553345</strong></p>
-</blockquote>
-<p>pip版：</p>
-<blockquote>
-<p>step0: x = [0.001 0.001], f(x) = 170.0<br>step2000: x = [2.3331807 1.9540695], f(x) = 13.730916023254395<br>step4000: x = [2.982008  2.0270984], f(x) = 0.014858869835734367<br>step6000: x = [2.9999835 2.0000222], f(x) = 1.1074007488787174e-08<br>step8000: x = [2.9999938 2.0000083], f(x) = 1.5572823031106964e-09<br>step10000: x = [2.9999979 2.0000029], f(x) = 1.8189894035458565e-10<br>step12000: x = [2.9999993 2.000001 ], f(x) = 1.6370904631912708e-11<br>step14000: x = [2.9999998 2.0000002], f(x) = 1.8189894035458565e-12<br>step16000: x = [3. 2.], f(x) = 0.0<br>step18000: x = [3. 2.], f(x) = 0.0<br><strong>time: 8.337981462478638</strong><br>step0: x = [0.001 0.001], f(x) = 170.0<br>step2000: x = [2.3331852 1.9540718], f(x) = 13.730728149414062<br>step4000: x = [2.9820085 2.0270977], f(x) = 0.01485812570899725<br>step6000: x = [2.9999835 2.0000222], f(x) = 1.1074007488787174e-08<br>step8000: x = [2.9999938 2.0000083], f(x) = 1.5572823031106964e-09<br>step10000: x = [2.9999979 2.0000029], f(x) = 1.8189894035458565e-10<br>step12000: x = [2.9999995 2.0000007], f(x) = 9.322320693172514e-12<br>step14000: x = [3.        2.0000002], f(x) = 9.094947017729282e-13<br>step16000: x = [3. 2.], f(x) = 0.0<br>step18000: x = [3. 2.], f(x) = 0.0<br><strong>time: 54.814427614212036</strong></p>
-</blockquote>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>新建环境：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create --name torch python=<span class="number">3.7</span></span><br></pre></td></tr></table></figure>
-
-<p>安装一些可能要用到的包（非必须，看自己情况）：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda install numpy</span><br><span class="line">conda install spyder</span><br><span class="line">conda install jupyter notebook</span><br></pre></td></tr></table></figure>
-
-<p>安装PyTorch：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install pytorch torchvision cpuonly -c pytorch <span class="comment"># CPU版</span></span><br></pre></td></tr></table></figure>
-<p>GPU版根据CUDA版本不同命令也不同，可以去<a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener">这里</a>查看安装命令</p>
-<h1 id="自动求导"><a href="#自动求导" class="headerlink" title="自动求导"></a>自动求导</h1><p><strong>requires_grad</strong></p>
-<p>设置张量的属性<code>.requires_grad</code> 为 <code>True</code>，那么它将会追踪对于该张量的所有操作。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torch.nn.functional <span class="keyword">as</span> F</span><br><span class="line"></span><br><span class="line">x = torch.ones(<span class="number">1</span>)</span><br><span class="line">w = torch.full([<span class="number">1</span>],<span class="number">2</span>)  <span class="comment"># 应为w = torch.full([1], 2, requires_grad=True)</span></span><br><span class="line">mse = F.mse_loss(x, x+w)</span><br><span class="line">torch.autograd.grad(mse, [w])</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn</p>
-</blockquote>
-<h3 id="PyTorch的图是静态创建的，如果使用requires-grad-方法："><a href="#PyTorch的图是静态创建的，如果使用requires-grad-方法：" class="headerlink" title="PyTorch的图是静态创建的，如果使用requires_grad_()方法："></a>PyTorch的图是静态创建的，如果使用<code>requires_grad_()</code>方法：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = torch.ones(<span class="number">1</span>)</span><br><span class="line">w = torch.full([<span class="number">1</span>], <span class="number">2</span>)</span><br><span class="line">mse = F.mse_loss(x, x+w)</span><br><span class="line">w.requires_grad_()</span><br><span class="line">torch.autograd.grad(mse, [w])</span><br></pre></td></tr></table></figure>
-<p>依然会报错：</p>
-<blockquote>
-<p>RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn</p>
-</blockquote>
-<p>因为mse这张图已经创建好了，因此要重新创建一次，或者将mse的创建放到<code>w.requires_grad_(True)</code>后面：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x = torch.ones(<span class="number">1</span>)</span><br><span class="line">w = torch.full([<span class="number">1</span>], <span class="number">2</span>)</span><br><span class="line">w.requires_grad_()</span><br><span class="line">mse = F.mse_loss(x, x+w)</span><br><span class="line">grad = torch.autograd.grad(mse, [w])  <span class="comment"># 返回一个列表，分别是对每个变量的梯度</span></span><br><span class="line">print(grad)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>(tensor([4.]),)</p>
-</blockquote>
-<p><strong>backward()</strong></p>
-<p>也可以通过调用 <code>.backward()</code>，来自动计算所有的梯度。这个张量的所有梯度将会自动累加到<code>.grad</code>属性.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">x = torch.ones(<span class="number">1</span>)</span><br><span class="line">w = torch.full([<span class="number">1</span>], <span class="number">2</span>)</span><br><span class="line">w.requires_grad_()</span><br><span class="line">mse = F.mse_loss(x, x+w)</span><br><span class="line"><span class="comment"># grad = torch.autograd.grad(mse, [w]) 和下面语句等价</span></span><br><span class="line">mse.backward()   <span class="comment"># 不返回值，而是把梯度附加在每个变量的grad属性</span></span><br><span class="line">print(w.grad)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>tensor([4.])</p>
-</blockquote>
-<h3 id="调用完backward-后，pytorch会把图的信息清除掉，当再次调用backward-，会报错："><a href="#调用完backward-后，pytorch会把图的信息清除掉，当再次调用backward-，会报错：" class="headerlink" title="调用完backward()后，pytorch会把图的信息清除掉，当再次调用backward()，会报错："></a>调用完<code>backward()</code>后，pytorch会把图的信息清除掉，当再次调用<code>backward()</code>，会报错：</h3><blockquote>
-<p>RuntimeError: Trying to backward through the graph a second time, but the buffers have already been freed. Specify retain_graph=True when calling backward the first time.</p>
-</blockquote>
-<p>要保持图的信息，可设置<code>retain_graph=True</code></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">torch.autograd.grad(mse, [w], retain_graph=<span class="literal">True</span>)</span><br><span class="line">或</span><br><span class="line">mse.backward(retain_graph=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-
-<p><strong>detach()</strong></p>
-<p>要阻止一个张量被跟踪历史，可以调用 .detach() 方法将其与计算历史分离，并阻止它未来的计算记录被跟踪。</p>
-<p>为了防止跟踪历史记录(和使用内存），可以将代码块包装在 <code>with torch.no_grad():</code> 中。在评估模型时特别有用，因为模型可能具有 <code>requires_grad = True</code> 的可训练的参数，但是我们不需要在此过程中对他们进行梯度计算。</p>
-
-      
     </div>
 
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
+
+
   
-  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/note/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/">配置博客</a>
+    </h3>
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://pengwei785.github.io/note/2020/04/21/test-site/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/note/images/avatar.gif">
-      <meta itemprop="name" content="Peng Wei">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="PengWei">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/note/2020/04/21/test-site/" class="post-title-link" itemprop="url">test_site</a>
-        </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-21 11:08:22" itemprop="dateCreated datePublished" datetime="2020-04-21T11:08:22+08:00">2020-04-21</time>
-            </span>
-
-          
-
-        </div>
-      </header>
+    <div class="post-content" id="post-content" itemprop="postContent">
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
+        链接：/themes/next/source/css/_common/scaffolding/base.styl  &gt;  a
+字体：/themes/next/source/css/_variables/base.styl  &gt;  font-size
 
-      
-          
-      
+    
+
+        <a href="/note/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-PyTorch"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2020-04-21 14:53:16" datetime="2020-04-21T06:53:16.000Z"  itemprop="datePublished">2020-04-21</time>
+
+        
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/note/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a></li></ul>
+
+
+
     </div>
 
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
+
+
   
-  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/note/2020/04/21/PyTorch/">PyTorch</a>
+    </h3>
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://pengwei785.github.io/note/2020/04/21/hello-world/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/note/images/avatar.gif">
-      <meta itemprop="name" content="Peng Wei">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="PengWei">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/note/2020/04/21/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-21 11:05:05" itemprop="dateCreated datePublished" datetime="2020-04-21T11:05:05+08:00">2020-04-21</time>
-            </span>
-
-          
-
-        </div>
-      </header>
+    <div class="post-content" id="post-content" itemprop="postContent">
 
     
+        PyTorch官网PyTorch官方教程PyTorch官方文档PyTorch中文文档/教程动手学深度学习PyTorch版
+引言做了一个小测试，发现在cpu上pytorch比tensorflow快很多。另外还发现，conda命令安装的tensorflow比pip安装的要快，pytorch则没有明显区别，之前就看到有人说conda中的tensorflow经过了优化，看来是真的。
+寻找下面函数的最...
     
+
+        <a href="/note/2020/04/21/PyTorch/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
     
-    <div class="post-body" itemprop="articleBody">
+</article>
 
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-test-site"
+  class="article-card article-type-post" itemprop="blogPost">
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+    <div class="post-meta">
+        <time class="post-time" title="2020-04-21 11:08:22" datetime="2020-04-21T03:08:22.000Z"  itemprop="datePublished">2020-04-21</time>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+        
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
     </div>
 
     
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/note/2020/04/21/test-site/">test_site</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
     
+        
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+        <a href="/note/2020/04/21/test-site/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-hello-world"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2020-04-21 11:05:05" datetime="2020-04-21T03:05:05.574Z"  itemprop="datePublished">2020-04-21</time>
+
+        
+
+
+    </div>
+
+    
 
 
   
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/note/2020/04/21/hello-world/">Hello World</a>
+    </h3>
+  
 
 
 
-          </div>
-          
 
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Qu...
+    
+
+        <a href="/note/2020/04/21/hello-world/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+</article>
+
+        </li>
+    
+    </ul>
+
+    
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/note/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Peng Wei &copy; 2015 - 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://pengwei785.github.io/note/&title=PengWei&pic=http://pengwei785.github.io/note/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://pengwei785.github.io/note/&title=PengWei&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://pengwei785.github.io/note/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=PengWei&url=http://pengwei785.github.io/note/&via=http://pengwei785.github.io/note" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://pengwei785.github.io/note/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://pengwei785.github.io/note/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
+var BLOG = { ROOT: '/note/', SHARE: true, REWARD: false };
+
+
 </script>
 
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
         </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
+    </a>
+</li>
+</template>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Peng Wei</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/note/archives/">
-        
-          <span class="site-state-item-count">4</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/note/categories/">
-          
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-  </nav>
-</div>
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
 
-      </div>
+<!-- mathjax config similar to math.stackexchange -->
 
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
 
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Peng Wei</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/note/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="/note/lib/velocity/velocity.min.js"></script>
-  <script src="/note/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/note/js/utils.js"></script>
-
-<script src="/note/js/motion.js"></script>
-
-
-<script src="/note/js/schemes/pisces.js"></script>
-
-
-<script src="/note/js/next-boot.js"></script>
-
-
-
-
-  
-  <script>
-    (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-<script>
-document.querySelectorAll('.pdfobject-container').forEach(element => {
-  let url = element.dataset.target;
-  let pdfOpenParams = {
-    navpanes : 0,
-    toolbar  : 0,
-    statusbar: 0,
-    pagemode : 'thumbs',
-    view     : 'FitH'
-  };
-  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
-  let fullURL = `/note/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
-
-  if (NexT.utils.supportsPDFs()) {
-    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
-  } else {
-    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
-  }
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
 });
 </script>
 
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
 
 
-  
 
-  
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-  
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
 
 </body>
 </html>
