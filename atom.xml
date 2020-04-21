@@ -6,7 +6,7 @@
   <link href="/note/atom.xml" rel="self"/>
   
   <link href="http://pengwei785.github.io/note/"/>
-  <updated>2020-04-21T12:45:27.046Z</updated>
+  <updated>2020-04-21T15:15:11.244Z</updated>
   <id>http://pengwei785.github.io/note/</id>
   
   <author>
@@ -17,13 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>pic</title>
+    <link href="http://pengwei785.github.io/note/2020/04/21/pic/"/>
+    <id>http://pengwei785.github.io/note/2020/04/21/pic/</id>
+    <published>2020-04-21T15:01:39.000Z</published>
+    <updated>2020-04-21T15:15:11.244Z</updated>
+    
+    <content type="html"><![CDATA[<p>{<img src="/note/2020/04/21/pic/fig.png" alt="fig">}</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;{&lt;img src=&quot;/note/2020/04/21/pic/fig.png&quot; alt=&quot;fig&quot;&gt;}&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="no" scheme="http://pengwei785.github.io/note/categories/no/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>配置博客</title>
     <link href="http://pengwei785.github.io/note/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/"/>
     <id>http://pengwei785.github.io/note/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-04-21T12:40:56.000Z</published>
-    <updated>2020-04-21T12:45:27.046Z</updated>
+    <updated>2020-04-21T14:36:09.373Z</updated>
     
-    <content type="html"><![CDATA[<p>链接：<code>/themes/next/source/css/_common/scaffolding/base.styl  &gt;  a</code></p><p>字体：<code>/themes/next/source/css/_variables/base.styl  &gt;  font-size</code></p>]]></content>
+    <content type="html"><![CDATA[<p>链接：<code>/themes/next/source/css/_common/scaffolding/base.styl  &gt;  a</code></p><p>字体：<code>/themes/next/source/css/_variables/base.styl  &gt;  font-size</code></p><p><img src="pic/Snipaste_2020-04-19_13-46-47.png" alt=""></p>]]></content>
     
     <summary type="html">
     
@@ -68,9 +93,17 @@
     <link href="http://pengwei785.github.io/note/2020/04/21/test-site/"/>
     <id>http://pengwei785.github.io/note/2020/04/21/test-site/</id>
     <published>2020-04-21T03:08:22.000Z</published>
-    <updated>2020-04-21T03:08:22.219Z</updated>
+    <updated>2020-04-21T14:38:05.130Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="pic/Snipaste_2020-04-19_13-46-47.png" alt=""></p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;pic/Snipaste_2020-04-19_13-46-47.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+      
     
     </summary>
     
