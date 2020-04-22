@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"pengwei785.github.io","root":"/note/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"pengwei785.github.io","root":"/note/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="PyTorch官网PyTorch官方教程PyTorch官方文档PyTorch中文文档&#x2F;教程动手学深度学习PyTorch版 引言做了一个小测试，发现在cpu上pytorch比tensorflow快很多。另外还发现，conda命令安装的tensorflow比pip安装的要快，pytorch则没有明显区别，之前就看到有人说conda中的tensorflow经过了优化，看来是真的。">
@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419152635168-692192025.png">
 <meta property="article:published_time" content="2020-04-21T06:53:16.000Z">
-<meta property="article:modified_time" content="2020-04-21T14:21:03.739Z">
+<meta property="article:modified_time" content="2020-04-22T02:50:51.922Z">
 <meta property="article:author" content="Peng Wei">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419152635168-692192025.png">
@@ -140,10 +140,6 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 
     <main class="main">
@@ -180,10 +176,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-04-21 14:53:16 / 修改时间：22:21:03" itemprop="dateCreated datePublished" datetime="2020-04-21T14:53:16+08:00">2020-04-21</time>
+              <time title="创建时间：2020-04-21 14:53:16" itemprop="dateCreated datePublished" datetime="2020-04-21T14:53:16+08:00">2020-04-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-22 10:50:51" itemprop="dateModified" datetime="2020-04-22T10:50:51+08:00">2020-04-22</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -213,14 +215,13 @@
 <p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419152635168-692192025.png" alt></p>
 <p>conda：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">himmelblau</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> (x[<span class="number">0</span>]**<span class="number">2</span> + x[<span class="number">1</span>] - <span class="number">11</span>)**<span class="number">2</span> + (x[<span class="number">0</span>] + x[<span class="number">1</span>]**<span class="number">2</span> - <span class="number">7</span>)**<span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> plotly.graph_objects <span class="keyword">as</span> go</span><br><span class="line">x = np.arange(<span class="number">-6</span>, <span class="number">6</span>, <span class="number">0.1</span>)</span><br><span class="line">y = np.arange(<span class="number">-6</span>, <span class="number">6</span>, <span class="number">0.1</span>)</span><br><span class="line"><span class="comment"># print('x,y range:', x.shape, y.shape)</span></span><br><span class="line">X, Y = np.meshgrid(x, y)</span><br><span class="line">fig = go.Figure(data=go.Surface(z=himmelblau([X,Y])))</span><br><span class="line">fig.write_image(<span class="string">'figure2.svg'</span>)</span><br><span class="line">fig.write_html(<span class="string">'first_figure.html'</span>, auto_open=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tic = time.time()</span><br><span class="line">x = torch.tensor([<span class="number">0.</span>, <span class="number">0.</span>], requires_grad=<span class="literal">True</span>)</span><br><span class="line">optimizer = torch.optim.Adam([x], lr=<span class="number">1e-3</span>)</span><br><span class="line"><span class="keyword">for</span> step <span class="keyword">in</span> range(<span class="number">20000</span>):</span><br><span class="line">    pred = himmelblau(x)</span><br><span class="line">    optimizer.zero_grad() <span class="comment"># 梯度信息清零</span></span><br><span class="line">    pred.backward()</span><br><span class="line">    optimizer.step() <span class="comment"># 每调用一次step，就更新一次: x' = x, y' = y</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> step % <span class="number">2000</span> == <span class="number">0</span>:</span><br><span class="line">        print(<span class="string">'step&#123;&#125;: x = &#123;&#125;, f(x) = &#123;&#125;'</span>.format(step, x.detach().numpy(), pred.item()))</span><br><span class="line">toc = time.time()</span><br><span class="line">print(<span class="string">'time:'</span>,toc-tic)</span><br><span class="line"></span><br><span class="line">tic = time.time()</span><br><span class="line">x = tf.Variable([<span class="number">0.</span>, <span class="number">0.</span>])  <span class="comment"># 传入GradientTape计算梯度的必须是tf.Variable类型</span></span><br><span class="line">optimizer = tf.optimizers.Adam(lr=<span class="number">1e-3</span>)</span><br><span class="line"><span class="keyword">for</span> step <span class="keyword">in</span> range(<span class="number">20000</span>):</span><br><span class="line">    <span class="keyword">with</span> tf.GradientTape() <span class="keyword">as</span> tape:</span><br><span class="line">        tape.watch([x])</span><br><span class="line">        pred = himmelblau(x)</span><br><span class="line">        </span><br><span class="line">    grads = tape.gradient(pred, [x])</span><br><span class="line">    optimizer.apply_gradients(zip(grads, [x])) <span class="comment"># 和pytorch不同，tf是将所有梯度信息存起来一次性更新</span></span><br><span class="line">    <span class="comment"># x -= 0.001*grads</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> step % <span class="number">2000</span> == <span class="number">0</span>:</span><br><span class="line">        print(<span class="string">'step&#123;&#125;: x = &#123;&#125;, f(x) = &#123;&#125;'</span>.format(step, x.numpy(), pred.numpy()))</span><br><span class="line">toc = time.time()</span><br><span class="line">print(<span class="string">'time:'</span>,toc-tic)</span><br></pre></td></tr></table></figure>
-<p>conda版：</p>
-<blockquote>
+
+<div class="tabs" id="unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#unique-name-1">conda</a></li><li class="tab"><a href="#unique-name-2">pip</a></li></ul><div class="tab-content"><div class="tab-pane active" id="unique-name-1"><blockquote>
 <p>step0: x = [0.001 0.001], f(x) = 170.0<br>step2000: x = [2.3331807 1.9540695], f(x) = 13.730916023254395<br>step4000: x = [2.982008  2.0270984], f(x) = 0.014858869835734367<br>step6000: x = [2.9999835 2.0000222], f(x) = 1.1074007488787174e-08<br>step8000: x = [2.9999938 2.0000083], f(x) = 1.5572823031106964e-09<br>step10000: x = [2.9999979 2.0000029], f(x) = 1.8189894035458565e-10<br>step12000: x = [2.9999993 2.000001 ], f(x) = 1.6370904631912708e-11<br>step14000: x = [2.9999998 2.0000002], f(x) = 1.8189894035458565e-12<br>step16000: x = [3. 2.], f(x) = 0.0<br>step18000: x = [3. 2.], f(x) = 0.0<br><strong>time: 8.470422983169556</strong><br>step0: x = [0.001 0.001], f(x) = 170.0<br>step2000: x = [2.3331852 1.9540718], f(x) = 13.730728149414062<br>step4000: x = [2.9820085 2.0270977], f(x) = 0.01485812570899725<br>step6000: x = [2.9999835 2.0000222], f(x) = 1.1074007488787174e-08<br>step8000: x = [2.9999938 2.0000083], f(x) = 1.5572823031106964e-09<br>step10000: x = [2.9999979 2.0000029], f(x) = 1.8189894035458565e-10<br>step12000: x = [2.9999995 2.0000007], f(x) = 9.322320693172514e-12<br>step14000: x = [3.        2.0000002], f(x) = 9.094947017729282e-13<br>step16000: x = [3. 2.], f(x) = 0.0<br>step18000: x = [3. 2.], f(x) = 0.0<br><strong>time: 43.112674951553345</strong></p>
-</blockquote>
-<p>pip版：</p>
-<blockquote>
+</blockquote></div><div class="tab-pane" id="unique-name-2"><blockquote>
 <p>step0: x = [0.001 0.001], f(x) = 170.0<br>step2000: x = [2.3331807 1.9540695], f(x) = 13.730916023254395<br>step4000: x = [2.982008  2.0270984], f(x) = 0.014858869835734367<br>step6000: x = [2.9999835 2.0000222], f(x) = 1.1074007488787174e-08<br>step8000: x = [2.9999938 2.0000083], f(x) = 1.5572823031106964e-09<br>step10000: x = [2.9999979 2.0000029], f(x) = 1.8189894035458565e-10<br>step12000: x = [2.9999993 2.000001 ], f(x) = 1.6370904631912708e-11<br>step14000: x = [2.9999998 2.0000002], f(x) = 1.8189894035458565e-12<br>step16000: x = [3. 2.], f(x) = 0.0<br>step18000: x = [3. 2.], f(x) = 0.0<br><strong>time: 8.337981462478638</strong><br>step0: x = [0.001 0.001], f(x) = 170.0<br>step2000: x = [2.3331852 1.9540718], f(x) = 13.730728149414062<br>step4000: x = [2.9820085 2.0270977], f(x) = 0.01485812570899725<br>step6000: x = [2.9999835 2.0000222], f(x) = 1.1074007488787174e-08<br>step8000: x = [2.9999938 2.0000083], f(x) = 1.5572823031106964e-09<br>step10000: x = [2.9999979 2.0000029], f(x) = 1.8189894035458565e-10<br>step12000: x = [2.9999995 2.0000007], f(x) = 9.322320693172514e-12<br>step14000: x = [3.        2.0000002], f(x) = 9.094947017729282e-13<br>step16000: x = [3. 2.], f(x) = 0.0<br>step18000: x = [3. 2.], f(x) = 0.0<br><strong>time: 54.814427614212036</strong></p>
-</blockquote>
+</blockquote></div></div></div>
+
 <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>新建环境：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create --name torch python=<span class="number">3.7</span></span><br></pre></td></tr></table></figure>
 
@@ -236,16 +237,12 @@
 <blockquote>
 <p>RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn</p>
 </blockquote>
-<h3 id="PyTorch的图是静态创建的，如果使用requires-grad-方法："><a href="#PyTorch的图是静态创建的，如果使用requires-grad-方法：" class="headerlink" title="PyTorch的图是静态创建的，如果使用requires_grad_()方法："></a>PyTorch的图是静态创建的，如果使用<code>requires_grad_()</code>方法：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = torch.ones(<span class="number">1</span>)</span><br><span class="line">w = torch.full([<span class="number">1</span>], <span class="number">2</span>)</span><br><span class="line">mse = F.mse_loss(x, x+w)</span><br><span class="line">w.requires_grad_()</span><br><span class="line">torch.autograd.grad(mse, [w])</span><br></pre></td></tr></table></figure>
-<p>依然会报错：</p>
-<blockquote>
-<p>RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn</p>
-</blockquote>
-<p>因为mse这张图已经创建好了，因此要重新创建一次，或者将mse的创建放到<code>w.requires_grad_(True)</code>后面：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x = torch.ones(<span class="number">1</span>)</span><br><span class="line">w = torch.full([<span class="number">1</span>], <span class="number">2</span>)</span><br><span class="line">w.requires_grad_()</span><br><span class="line">mse = F.mse_loss(x, x+w)</span><br><span class="line">grad = torch.autograd.grad(mse, [w])  <span class="comment"># 返回一个列表，分别是对每个变量的梯度</span></span><br><span class="line">print(grad)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>(tensor([4.]),)</p>
-</blockquote>
+<div class="note warning no-icon">
+            <p>PyTorch的图是静态创建的，如果使用<code>requires_grad_()</code>方法：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = torch.ones(<span class="number">1</span>)</span><br><span class="line">w = torch.full([<span class="number">1</span>], <span class="number">2</span>)</span><br><span class="line">mse = F.mse_loss(x, x+w)</span><br><span class="line">w.requires_grad_()</span><br><span class="line">torch.autograd.grad(mse, [w])</span><br></pre></td></tr></table></figure>依然会报错：> RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn<p>因为mse这张图已经创建好了，因此要重新创建一次，或者将mse的创建放到<code>w.requires_grad_(True)</code>后面：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x = torch.ones(<span class="number">1</span>)</span><br><span class="line">w = torch.full([<span class="number">1</span>], <span class="number">2</span>)</span><br><span class="line">w.requires_grad_()</span><br><span class="line">mse = F.mse_loss(x, x+w)</span><br><span class="line">grad = torch.autograd.grad(mse, [w])  <span class="comment"># 返回一个列表，分别是对每个变量的梯度</span></span><br><span class="line">print(grad)</span><br></pre></td></tr></table></figure>> (tensor([4.]),)
+          </div>
+
+
+
 <p><strong>backward()</strong></p>
 <p>也可以通过调用 <code>.backward()</code>，来自动计算所有的梯度。这个张量的所有梯度将会自动累加到<code>.grad</code>属性.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">x = torch.ones(<span class="number">1</span>)</span><br><span class="line">w = torch.full([<span class="number">1</span>], <span class="number">2</span>)</span><br><span class="line">w.requires_grad_()</span><br><span class="line">mse = F.mse_loss(x, x+w)</span><br><span class="line"><span class="comment"># grad = torch.autograd.grad(mse, [w]) 和下面语句等价</span></span><br><span class="line">mse.backward()   <span class="comment"># 不返回值，而是把梯度附加在每个变量的grad属性</span></span><br><span class="line">print(w.grad)</span><br></pre></td></tr></table></figure>
@@ -341,7 +338,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自动求导"><span class="nav-number">3.</span> <span class="nav-text">自动求导</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PyTorch的图是静态创建的，如果使用requires-grad-方法："><span class="nav-number">3.0.1.</span> <span class="nav-text">PyTorch的图是静态创建的，如果使用requires_grad_()方法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调用完backward-后，pytorch会把图的信息清除掉，当再次调用backward-，会报错："><span class="nav-number">3.0.2.</span> <span class="nav-text">调用完backward()后，pytorch会把图的信息清除掉，当再次调用backward()，会报错：</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自动求导"><span class="nav-number">3.</span> <span class="nav-text">自动求导</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#调用完backward-后，pytorch会把图的信息清除掉，当再次调用backward-，会报错："><span class="nav-number">3.0.1.</span> <span class="nav-text">调用完backward()后，pytorch会把图的信息清除掉，当再次调用backward()，会报错：</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -371,6 +368,10 @@
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>
