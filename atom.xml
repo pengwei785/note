@@ -6,7 +6,7 @@
   <link href="/note/atom.xml" rel="self"/>
   
   <link href="http://pengwei785.github.io/"/>
-  <updated>2020-04-22T05:20:01.924Z</updated>
+  <updated>2020-04-22T06:48:30.966Z</updated>
   <id>http://pengwei785.github.io/</id>
   
   <author>
@@ -17,16 +17,22 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>PCA降维</title>
-    <link href="http://pengwei785.github.io/2020/04/22/PCA%E9%99%8D%E7%BB%B4/"/>
-    <id>http://pengwei785.github.io/2020/04/22/PCA%E9%99%8D%E7%BB%B4/</id>
-    <published>2020-04-22T05:20:01.000Z</published>
-    <updated>2020-04-22T05:20:01.924Z</updated>
+    <title>鸢尾花</title>
+    <link href="http://pengwei785.github.io/2020/04/22/%E9%B8%A2%E5%B0%BE%E8%8A%B1/"/>
+    <id>http://pengwei785.github.io/2020/04/22/%E9%B8%A2%E5%B0%BE%E8%8A%B1/</id>
+    <published>2020-04-22T06:47:55.000Z</published>
+    <updated>2020-04-22T06:48:30.966Z</updated>
+    
+    <content type="html"><![CDATA[<p>​          </p><a id="more"></a><p>可以看到，在鸢尾花数据集中二分k-medoids的效果比k-means要差，这是因为鸢尾花数据集的分布规律体现不出k-medoids的优势，在因此针对不同数据分布选取不同的聚类方法十分重要。</p><p>另外，基于密度的dbscan在鸢尾花数据中表现最差，一部分是因为数据的分布不利于密度聚类，还有一部分原因是调参。eps和min_examples这两个参数的值对聚类结果影响很大，这里使用默认的参数，因为我越调结果越差。</p>]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;​          &lt;/p&gt;
+    
     </summary>
     
+    
+      <category term="机器学习" scheme="http://pengwei785.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
