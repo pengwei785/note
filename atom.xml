@@ -5,9 +5,9 @@
   
   <link href="/note/atom.xml" rel="self"/>
   
-  <link href="http://pengwei785.github.io/note/"/>
+  <link href="http://pengwei785.github.io/"/>
   <updated>2020-04-21T17:31:47.539Z</updated>
-  <id>http://pengwei785.github.io/note/</id>
+  <id>http://pengwei785.github.io/</id>
   
   <author>
     <name>Peng Wei</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>ant</title>
-    <link href="http://pengwei785.github.io/note/2020/04/21/ant/"/>
-    <id>http://pengwei785.github.io/note/2020/04/21/ant/</id>
+    <link href="http://pengwei785.github.io/2020/04/21/ant/"/>
+    <id>http://pengwei785.github.io/2020/04/21/ant/</id>
     <published>2020-04-21T15:27:30.000Z</published>
     <updated>2020-04-21T17:31:47.539Z</updated>
     
@@ -36,15 +36,15 @@
     </summary>
     
     
-      <category term="no" scheme="http://pengwei785.github.io/note/categories/no/"/>
+      <category term="no" scheme="http://pengwei785.github.io/categories/no/"/>
     
     
   </entry>
   
   <entry>
     <title>pic</title>
-    <link href="http://pengwei785.github.io/note/2020/04/21/pic/"/>
-    <id>http://pengwei785.github.io/note/2020/04/21/pic/</id>
+    <link href="http://pengwei785.github.io/2020/04/21/pic/"/>
+    <id>http://pengwei785.github.io/2020/04/21/pic/</id>
     <published>2020-04-21T15:01:39.000Z</published>
     <updated>2020-04-21T17:51:53.862Z</updated>
     
@@ -60,15 +60,15 @@
     </summary>
     
     
-      <category term="no" scheme="http://pengwei785.github.io/note/categories/no/"/>
+      <category term="no" scheme="http://pengwei785.github.io/categories/no/"/>
     
     
   </entry>
   
   <entry>
     <title>配置博客</title>
-    <link href="http://pengwei785.github.io/note/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://pengwei785.github.io/note/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/</id>
+    <link href="http://pengwei785.github.io/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://pengwei785.github.io/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-04-21T12:40:56.000Z</published>
     <updated>2020-04-21T14:36:09.373Z</updated>
     
@@ -85,15 +85,15 @@
     </summary>
     
     
-      <category term="其它" scheme="http://pengwei785.github.io/note/categories/%E5%85%B6%E5%AE%83/"/>
+      <category term="其它" scheme="http://pengwei785.github.io/categories/%E5%85%B6%E5%AE%83/"/>
     
     
   </entry>
   
   <entry>
     <title>PyTorch</title>
-    <link href="http://pengwei785.github.io/note/2020/04/21/PyTorch/"/>
-    <id>http://pengwei785.github.io/note/2020/04/21/PyTorch/</id>
+    <link href="http://pengwei785.github.io/2020/04/21/PyTorch/"/>
+    <id>http://pengwei785.github.io/2020/04/21/PyTorch/</id>
     <published>2020-04-21T06:53:16.000Z</published>
     <updated>2020-04-22T02:50:51.922Z</updated>
     
@@ -107,15 +107,15 @@
     </summary>
     
     
-      <category term="深度学习" scheme="http://pengwei785.github.io/note/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="深度学习" scheme="http://pengwei785.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
   
   <entry>
     <title>test_site</title>
-    <link href="http://pengwei785.github.io/note/2020/04/21/test-site/"/>
-    <id>http://pengwei785.github.io/note/2020/04/21/test-site/</id>
+    <link href="http://pengwei785.github.io/2020/04/21/test-site/"/>
+    <id>http://pengwei785.github.io/2020/04/21/test-site/</id>
     <published>2020-04-21T03:08:22.000Z</published>
     <updated>2020-04-21T14:38:05.130Z</updated>
     
@@ -137,8 +137,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://pengwei785.github.io/note/2020/04/21/hello-world/"/>
-    <id>http://pengwei785.github.io/note/2020/04/21/hello-world/</id>
+    <link href="http://pengwei785.github.io/2020/04/21/hello-world/"/>
+    <id>http://pengwei785.github.io/2020/04/21/hello-world/</id>
     <published>2020-04-21T03:05:05.574Z</published>
     <updated>2020-04-21T14:21:18.594Z</updated>
     
