@@ -6,7 +6,7 @@
   <link href="/note/atom.xml" rel="self"/>
   
   <link href="http://pengwei785.github.io/"/>
-  <updated>2020-04-21T17:31:47.539Z</updated>
+  <updated>2020-04-22T05:20:01.924Z</updated>
   <id>http://pengwei785.github.io/</id>
   
   <author>
@@ -17,50 +17,64 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ant</title>
-    <link href="http://pengwei785.github.io/2020/04/21/ant/"/>
-    <id>http://pengwei785.github.io/2020/04/21/ant/</id>
-    <published>2020-04-21T15:27:30.000Z</published>
-    <updated>2020-04-21T17:31:47.539Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/note/note/2020/04/21/ant/fig.png" alt="fig"></p>]]></content>
+    <title>PCA降维</title>
+    <link href="http://pengwei785.github.io/2020/04/22/PCA%E9%99%8D%E7%BB%B4/"/>
+    <id>http://pengwei785.github.io/2020/04/22/PCA%E9%99%8D%E7%BB%B4/</id>
+    <published>2020-04-22T05:20:01.000Z</published>
+    <updated>2020-04-22T05:20:01.924Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img src=&quot;/note/note/2020/04/21/ant/fig.png&quot; alt=&quot;fig&quot;&gt;&lt;/p&gt;
-
-      
-    
     </summary>
     
-    
-      <category term="no" scheme="http://pengwei785.github.io/categories/no/"/>
     
     
   </entry>
   
   <entry>
-    <title>pic</title>
-    <link href="http://pengwei785.github.io/2020/04/21/pic/"/>
-    <id>http://pengwei785.github.io/2020/04/21/pic/</id>
-    <published>2020-04-21T15:01:39.000Z</published>
-    <updated>2020-04-21T17:51:53.862Z</updated>
+    <title>深度学习</title>
+    <link href="http://pengwei785.github.io/2020/04/22/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://pengwei785.github.io/2020/04/22/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</id>
+    <published>2020-04-22T05:19:45.000Z</published>
+    <updated>2020-04-22T05:21:03.104Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://images.cnblogs.com/cnblogs_com/pengweiblog/1604268/o_200421171341%E6%9C%AA%E5%91%BD%E5%90%8D_meitu_1.png" alt="blog"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="梯度"><a href="#梯度" class="headerlink" title="梯度"></a>梯度</h1><h2 id="什么是梯度？"><a href="#什么是梯度？" class="headerlink" title="什么是梯度？"></a>什么是梯度？</h2><p>导数：标量。各个反向都有，反映函数在给定方向的变化率。<br>偏导数：标量。是一种特殊的导数。沿自变量反向，反映函数在各自变量方向的变化率。<br>梯度：向量。由各个偏导数组成的向量。梯度的反向反映函数增长的方向</p><p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419211738630-1707281905.png" alt=""></p><p>下面的箭头表示梯度：</p><p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419212250493-1423645731.png" alt=""></p><h2 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h2><p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419213056996-1361623212.gif" alt=""></p><p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419212953381-2018117993.gif" alt=""></p><p>图源：<a href="https://ruder.io/optimizing-gradient-descent/" target="_blank" rel="noopener">https://ruder.io/optimizing-gradient-descent/</a></p><h2 id="局部极小值"><a href="#局部极小值" class="headerlink" title="局部极小值"></a>局部极小值</h2><p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419213459163-1025658897.png" alt=""></p><p>ResNet可以平滑局部极小值：</p><p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419213541828-885651836.png" alt=""></p><h2 id="鞍点"><a href="#鞍点" class="headerlink" title="鞍点"></a>鞍点</h2><p>有可能求得的是某个维度的极小值，却是另一个维度的极大值。</p><p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200420203208366-1835740731.png" alt=""></p><h1 id="影响求极小值的因素"><a href="#影响求极小值的因素" class="headerlink" title="影响求极小值的因素"></a>影响求极小值的因素</h1><h2 id="初始状态"><a href="#初始状态" class="headerlink" title="初始状态"></a>初始状态</h2><p>不同的初始状态对结果产生影响：</p><p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419214308100-1539977211.png" alt=""></p><p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419214403385-614490166.png" alt=""></p><h2 id="学习率"><a href="#学习率" class="headerlink" title="学习率"></a>学习率</h2><p>不再赘述</p><h2 id="动量"><a href="#动量" class="headerlink" title="动量"></a>动量</h2><p>使其具有保持原来运动方向的趋势。</p><p><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200419214512089-650172177.png" alt=""></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;https://images.cnblogs.com/cnblogs_com/pengweiblog/1604268/o_200421171341%E6%9C%AA%E5%91%BD%E5%90%8D_meitu_1.png&quot; alt=&quot;blog&quot;&gt;&lt;/
+        &lt;h1 id=&quot;梯度&quot;&gt;&lt;a href=&quot;#梯度&quot; class=&quot;headerlink&quot; title=&quot;梯度&quot;&gt;&lt;/a&gt;梯度&lt;/h1&gt;&lt;h2 id=&quot;什么是梯度？&quot;&gt;&lt;a href=&quot;#什么是梯度？&quot; class=&quot;headerlink&quot; title=&quot;什么是梯度？&quot;&gt;&lt;/a&gt;什
       
     
     </summary>
     
     
-      <category term="no" scheme="http://pengwei785.github.io/categories/no/"/>
+      <category term="深度学习" scheme="http://pengwei785.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>强化学习</title>
+    <link href="http://pengwei785.github.io/2020/04/22/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://pengwei785.github.io/2020/04/22/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</id>
+    <published>2020-04-22T05:19:31.000Z</published>
+    <updated>2020-04-22T05:20:26.910Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="安装Gym踩的坑"><a href="#安装Gym踩的坑" class="headerlink" title="安装Gym踩的坑"></a>安装Gym踩的坑</h1><p><a href="https://gym.openai.com/" target="_blank" rel="noopener">Gym官网</a><br><a href="https://gym.openai.com/docs/" target="_blank" rel="noopener">Gym官方文档</a></p><p>gym可以pip安装和源码安装，pip安装的是一些常用的游戏环境，并不是全部的。这里选择源码安装。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/openai/gym</span><br><span class="line">cd gym</span><br><span class="line">pip install -e .</span><br></pre></td></tr></table></figure><p>执行<code>pip install -e .[all]</code>可安装完整的gym库。</p><p>windows下安装的时候可能会出现的问题：</p><ul><li>error: command ‘swig.exe’ failed: no such file or directory<br><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200418003605325-1612098545.png" alt=""></li></ul><p>解决办法1：conda安装swig <code>conda install swig</code><br>解决办法2：下载<a href="https://netix.dl.sourceforge.net/project/swig/swigwin/swigwin-3.0.12/swigwin-3.0.12.zip" target="_blank" rel="noopener">swig for windows</a></p><ol><li>把swig.exe复制到python安装文件(如C:/python37，如果是anaconda环境则是.conda/envs/环境名/)</li><li>把<code>swigwin-3.0.12/Lib</code>文件夹下所有 *.swg复制到<code>C:/python37/Lib或.conda/envs/环境名/Lib/</code></li><li>打开<code>swigwin-3.0.12/Lib/python</code>并复制所有文件到<code>C:/python27/Lib或.conda/envs/环境名/Lib/</code></li><li>复制’typemaps’文件夹到<code>C:/python27/Lib/</code><br>出现这个问题就是没有复制typemaps：<br><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200418003633434-1167350096.png" alt=""></li></ol><p>(并且要确保你安装了Microsoft Visual C++ Compiler for Python)<a href="http://go.microsoft.com/fwlink/?LinkId=691126" target="_blank" rel="noopener">Visual C++ Build Tools 2015</a></p><p>如果没有安装会报错：<br><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200418003325055-1523727167.png" alt=""><br>安装完成：<br><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200418003211864-1108347896.png" alt=""></p><p>然后安装cython：<code>conda install cython</code><br><img src="https://img2020.cnblogs.com/blog/1758578/202004/1758578-20200418004002253-517243945.png" alt=""></p><p>最后Mujoco是收费的，如果是学生可以免费使用。mujoco是一个机器人仿真库，需要的同学可以安装：<br><a href="https://github.com/openai/mujoco-py#install-mujoco" target="_blank" rel="noopener">https://github.com/openai/mujoco-py#install-mujoco</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;安装Gym踩的坑&quot;&gt;&lt;a href=&quot;#安装Gym踩的坑&quot; class=&quot;headerlink&quot; title=&quot;安装Gym踩的坑&quot;&gt;&lt;/a&gt;安装Gym踩的坑&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://gym.openai.com/&quot; target=&quot;_bla
+      
+    
+    </summary>
+    
+    
+      <category term="强化学习" scheme="http://pengwei785.github.io/categories/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
@@ -108,48 +122,6 @@
     
     
       <category term="深度学习" scheme="http://pengwei785.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test_site</title>
-    <link href="http://pengwei785.github.io/2020/04/21/test-site/"/>
-    <id>http://pengwei785.github.io/2020/04/21/test-site/</id>
-    <published>2020-04-21T03:08:22.000Z</published>
-    <updated>2020-04-21T14:38:05.130Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/note/note/2020/04/21/test-site/Snipaste_2020-04-19_13-46-47.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;/note/note/2020/04/21/test-site/Snipaste_2020-04-19_13-46-47.png&quot; alt&gt;&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://pengwei785.github.io/2020/04/21/hello-world/"/>
-    <id>http://pengwei785.github.io/2020/04/21/hello-world/</id>
-    <published>2020-04-21T03:05:05.574Z</published>
-    <updated>2020-04-21T14:21:18.594Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-    
-    </summary>
-    
     
     
   </entry>
