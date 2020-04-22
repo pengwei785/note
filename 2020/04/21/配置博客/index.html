@@ -191,6 +191,20 @@
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/note/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/note/2020/04/21/%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -238,6 +252,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -397,35 +412,44 @@
 
 
 
-<script>
-document.querySelectorAll('.pdfobject-container').forEach(element => {
-  let url = element.dataset.target;
-  let pdfOpenParams = {
-    navpanes : 0,
-    toolbar  : 0,
-    statusbar: 0,
-    pagemode : 'thumbs',
-    view     : 'FitH'
-  };
-  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
-  let fullURL = `/note/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
 
-  if (NexT.utils.supportsPDFs()) {
-    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
-  } else {
-    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
-  }
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.4.7/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : '6ESf87DjFATrBHcfGUgKDsVI-gzGzoHsz',
+      appKey     : 'Dggqpdsw4qdwso0jYw4KWExC',
+      placeholder: "欢迎留言交流~~",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
 });
 </script>
-
-
-
-
-  
-
-  
-
-  
 
 </body>
 </html>
